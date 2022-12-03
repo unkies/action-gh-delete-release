@@ -1,4 +1,4 @@
-name: compute release
+name: test the release
 
 on:
   push:
