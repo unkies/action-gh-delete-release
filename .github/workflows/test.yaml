@@ -22,9 +22,10 @@ jobs:
       - name: Create Test Release
         uses: softprops/action-gh-release@v1
         with:
-          name: Test release
           tag_name: test-release
           repository: ${{ github.repository }}
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       - name: Clean up release
