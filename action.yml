@@ -1,4 +1,4 @@
-name: Delete tags and releases
+name: Action GH Delete Release
 description: delete tag and release
 author: "unkies"
 
