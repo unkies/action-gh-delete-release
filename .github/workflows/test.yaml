@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Remove potentially lingering release
-        uses: unkies/delete-tag-and-release@main
+        uses: unkies/delete-tag-and-release@v0.2.1
         with:
           delete_release: true
           tag_name: test-release
@@ -29,7 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       - name: Clean up release
-        uses: unkies/delete-tag-and-release@main
+        uses: unkies/delete-tag-and-release@v0.2.1
         with:
           delete_release: true
           tag_name: test-release
