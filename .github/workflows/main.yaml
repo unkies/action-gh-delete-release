@@ -7,11 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install
-        run: npm ci
-      - name: Build
-        run: npm run build
-      - name: Test
-        run: npm run test
       - name: Format
         run: npm run fmtcheck
