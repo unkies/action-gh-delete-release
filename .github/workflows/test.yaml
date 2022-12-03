@@ -9,7 +9,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-22.04
-    needs: build-artifacts
     steps:
       - uses: actions/checkout@v3
       - name: Remove potentially lingering release
