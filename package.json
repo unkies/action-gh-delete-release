@@ -1,5 +1,5 @@
 {
-  "name": "delete-tag-and-release",
+  "name": "action-gh-delete-release",
   "version": "v0.2.1",
   "main": "index.js",
   "repository": {
