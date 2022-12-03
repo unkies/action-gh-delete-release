@@ -14,7 +14,9 @@ if (process.env.INPUT_REPO) {
 } else if (process.env.GITHUB_REPOSITORY) {
   [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
 } else {
-  console.error("🔴 no GITHUB_REPOSITORY found. pass `GITHUB_REPOSITORY` as env or owner/repo as inputs");
+  console.error(
+    "🔴 no GITHUB_REPOSITORY found. pass `GITHUB_REPOSITORY` as env or owner/repo as inputs"
+  );
   process.exitCode = 1;
   return;
 }
@@ -56,7 +58,9 @@ async function deleteTag() {
   } catch (error) {
     console.error(`🌶  failed to delete ref "${tagRef}" <- ${error.message}`);
     if (error.message === "Reference does not exist") {
-      console.error("😕  Proceeding anyway, because tag not existing is the goal");
+      console.error(
+        "😕  Proceeding anyway, because tag not existing is the goal"
+      );
     } else {
       console.error(`🌶  An error occured while deleting the tag "${tagName}"`);
       process.exitCode = 1;
@@ -99,7 +103,9 @@ async function deleteReleases() {
         method: "DELETE",
       });
     } catch (error) {
-      console.error(`🌶  failed to delete release with id "${releaseId}"  <- ${error.message}`);
+      console.error(
+        `🌶  failed to delete release with id "${releaseId}"  <- ${error.message}`
+      );
       hasError = true;
       break;
     }
