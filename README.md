@@ -1,5 +1,7 @@
 # GitHub Action: Delete tag and release
 
+[![main](https://github.com/unkies/action-gh-delete-release/actions/workflows/main.yaml/badge.svg?branch=master)](https://github.com/unkies/action-gh-delete-release/actions/workflows/main.yaml)
+
 Add following step to your workflow:
 
 ```yaml
@@ -14,4 +16,4 @@ Add following step to your workflow:
 
 ## History
 
-This project was taken from: https://github.com/dev-drprasad/delete-tag-and-release
+This project was taken from [here](https://github.com/dev-drprasad/delete-tag-and-release).
