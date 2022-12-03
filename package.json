@@ -1,14 +1,14 @@
 {
   "name": "delete-tag-and-release",
-  "version": "v0.1.1",
+  "version": "v0.2.1",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dev-drprasad/delete-tag-and-release"
+    "url": "git+https://github.com/unkies/delete-tag-and-release"
   },
   "keywords": [],
-  "author": "REDDY PRASAD",
-  "license": "ISC",
-  "homepage": "https://github.com/dev-drprasad/delete-tag-and-release",
+  "author": "Unkies",
+  "license": "MIT",
+  "homepage": "https://github.com/unkies/delete-tag-and-release",
   "dependencies": {}
 }
