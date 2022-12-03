@@ -5,7 +5,7 @@
 Add following step to your workflow:
 
 ```yaml
-- uses: unkies/delete-tag-and-release@v0.2.1
+- uses: unkies/delete-tag-and-release@v1
   with:
     delete_release: true # default: false
     tag_name: v0.1.0 # tag name to delete
